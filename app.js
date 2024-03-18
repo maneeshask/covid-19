@@ -4,7 +4,7 @@ const { open } = require("sqlite");
 const sqlite3 = require("sqlite3");
 const path = require("path");
 const dbPath = path.join(__dirname, "covid19India.db");
-const db = null;
+let db = null;
 
 const initializeDbAndStartServer = async () => {
   try {
